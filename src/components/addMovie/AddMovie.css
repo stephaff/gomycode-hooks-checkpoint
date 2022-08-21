@@ -1,0 +1,13 @@
+.btn-add-movie{
+    color: #fff;
+    padding: 0.4rem 0.6rem;
+    border-radius: 18px;
+    border: none;
+    background-color: #FB0A72;
+    cursor: pointer;
+}
+.btn-add-movie:hover{
+    color: #fff;
+    background-color: #FB0A72;
+    box-shadow: 4px 2px 5px rgba(255, 255, 255, 0.7), 0 0 2px rgba(255, 255, 255, 0.7);
+}

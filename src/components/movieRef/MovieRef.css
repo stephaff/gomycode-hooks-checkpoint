@@ -1,0 +1,31 @@
+.movie-ref{
+    width: 70%;
+    height: 40px;
+    background-color: white;
+    position: absolute;
+    right: 7.5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem 0 2rem;
+}
+.movie-ref div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid blue;
+}
+.btn-close{
+    margin-left: 1rem;
+    cursor: pointer;
+}
+.movieRef-title{
+    width: 24%;
+}
+.movieRef-poster{
+    width: 24%;
+}
+.movieRef-url{
+    width: 40%;
+}
