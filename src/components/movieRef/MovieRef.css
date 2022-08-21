@@ -1,31 +1,94 @@
 .movie-ref{
-    width: 70%;
+    width: 920px;
     height: 40px;
-    background-color: white;
+    background-color: #f1f1f1;
     position: absolute;
     right: 7.5%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 0 1rem 0 2rem;
+    padding: 0 1rem 0 1rem;
+    border-radius: 5px;
+    z-index: 2;
+    transition: all 0.7s;
 }
-.movie-ref div{
+.display-movie-ref{
+    transform: translate(120%);
+}
+.movieRef-left{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid blue;
-}
-.btn-close{
-    margin-left: 1rem;
-    cursor: pointer;
+    gap: 1rem;
 }
 .movieRef-title{
-    width: 24%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.movieRef-title input{
+    color: #FB0A72;
+    font-size: 16px;
+    height: 30px;
+    width: 200px;
+    padding-left: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #dad8c9;
+    outline: none;
 }
 .movieRef-poster{
-    width: 24%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.poster-choice{
+    font-size: 12px;
+    height: 30px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    border: 1px dashed #FB0A72;
+    border-radius: 5px;
+}
+.poster-choice label{
+    cursor: pointer;
 }
 .movieRef-url{
-    width: 40%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.movieRef-url input{
+    width: 220px;
+    height: 30px;
+    padding: 0 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #dad8c9;
+    outline: none;
+}
+.movieRef-right{
+    display: flex;
+    align-items: center;
+}
+.btn-close{
+    font-size: 24px;
+    padding: 2px;
+    margin-left: 1rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.movieRef-btn-add{
+    font-size: 14px;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    padding: 0.4rem 1rem;
+    background-color: #FB0A72;
+    cursor: pointer;
 }

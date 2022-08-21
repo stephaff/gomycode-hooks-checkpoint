@@ -1,22 +1,42 @@
-import React from 'react';
+import { useState } from 'react';
 import '../movieRef/MovieRef.css';
 
-const MovieRef = () => {
+const MovieRef = ({ addWindow, setAddWindow, addMovie }) => {
+
+  const displayAddWindow = () => setAddWindow(!addWindow);
+  const [movieTitle, setMovieTitle] = useState('');
+
+  function currentTitle(e){
+    setMovieTitle(e.target.value);
+  }
+
+  function addNewMovie(){
+    addMovie({title : movieTitle, poster : 'fauconNoir.jpg'});
+  }
+  
   return (
-    <div className='movie-ref'>
+    <div className={addWindow? 'movie-ref' : 'movie-ref display-movie-ref'}>
+      <div className="movieRef-left">
         <div className="movieRef-title">
-            <h3>Titre</h3>
-            <input type="text" />
+          <h3>Titre</h3>
+          <input type="text" onChange={ currentTitle } />
         </div>
-        <div>
-            <h3 className="movieRef-poster">Poster</h3>
-            <input type="file" hidden />
+        <div className="movieRef-poster">
+          <h3>Poster</h3>
+          <div className="poster-choice">
+            <input type="file" id="file-poster" accept='.png, .jpg, .jpeg' hidden />
+            <label for="file-poster">Choisir un fichier</label>
+          </div>
         </div>
         <div className="movieRef-url">
-            <h3 className='url'>URL</h3>
-            <input type="text" />
-            <span className='btn-close'>X</span>
+          <h3>URL</h3>
+          <input type="text" />
         </div>
+      </div>
+      <div className="movieRef-right">
+        <button className='movieRef-btn-add' onClick={ addNewMovie }>Add</button>
+        <button className='btn-close' onClick={displayAddWindow}>X</button>
+      </div>
     </div>
   )
 }

@@ -35,15 +35,8 @@ const MovieList = () => {
     ]
   );
 
-  function addMovie(){
+  function addMovie(movie){
 
-    let movie = {
-        title : "SetphMovie",
-        poster : "fauconNoir.jpg",
-        url : 'https',
-        id : 5
-    }
-    console.log(searchMovie)
     let oldMovies = [...movies];
     oldMovies.push(movie);
     setMovies(oldMovies);
@@ -61,6 +54,7 @@ const MovieList = () => {
           else if (movie.title.toLocaleLowerCase().includes(searchMovie.toLocaleLowerCase())) {
             return movie;
           }
+          return 0;
         }).map(movie => {
             return <Movie title={movie.title} poster={movie.poster} key={movie.id} />;
           })

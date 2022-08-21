@@ -1,9 +1,9 @@
 import React from 'react';
 import '../addMovie/AddMovie.css';
 
-const AddMovie = ( { addMovie }) => {
+const AddMovie = ( { setAddWindow }) => {
   return (
-    <button className='btn-add-movie' onClick={ addMovie }>Add movie</button>
+    <button className='btn-add-movie' onClick={ setAddWindow }>Add movie</button>
   )
 }
 
