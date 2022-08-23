@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../movieList/MovieList.css';
+import './MovieList.css';
 import Movie from '../movie/Movie';
 import Navbar from '../navbar/Navbar';
 

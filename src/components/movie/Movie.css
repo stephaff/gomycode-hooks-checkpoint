@@ -5,14 +5,23 @@
 .movie-poster{
     width: 100%;
     height: 340px;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+}
+.movie-poster:hover{
+    border: 3px solid greenyellow;
 }
 .movie-poster img{
     width: 100%;
-    aspect-ratio: 1/1;
+    height: 100%;
     object-fit: cover;
     object-position: top;
     border-radius: 8px 8px 0 0;
     cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.movie-poster img:hover{
+    transform: scale(1.4);
 }
 .movie-information{
     height: 60px;
@@ -25,8 +34,8 @@
 .movie-title{
     cursor: pointer;
 }
-.rating{
-    cursor: pointer;
+.more{
+    display: flex;
 }
 .description{
     margin-left: 1rem;

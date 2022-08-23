@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import '../movieRef/MovieRef.css';
+import './MovieRef.css';
 
 const MovieRef = ({ addWindow, setAddWindow, addMovie }) => {
 

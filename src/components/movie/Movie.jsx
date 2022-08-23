@@ -1,5 +1,6 @@
 import React from 'react';
-import '../movie/Movie.css';
+import Rating from '../rating/Rating';
+import './Movie.css';
 
 const Movie = ( { title, poster } ) => {
   return (
@@ -10,9 +11,7 @@ const Movie = ( { title, poster } ) => {
         <div className="movie-information">
             <h3 className='movie-title'>{ title }</h3>
             <div className="more">
-                <span className='rating'>
-                    1 2 3 4 5
-                </span>
+                <Rating />
                 <span className="description">
                     ...
                 </span>

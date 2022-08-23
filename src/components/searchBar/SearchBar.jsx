@@ -1,5 +1,5 @@
 import React from 'react';
-import '../searchBar/SearchBar.css';
+import './SearchBar.css';
 
 const SearchBar = ( { setSearchMovie } ) => {
 

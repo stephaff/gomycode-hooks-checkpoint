@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../navbar/Navbar.css';
+import './Navbar.css';
 import Logo from '../logo/Logo';
 import SearchBar from '../searchBar/SearchBar';
 import AddMovie from '../addMovie/AddMovie';
