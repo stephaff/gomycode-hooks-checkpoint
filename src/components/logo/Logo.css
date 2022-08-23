@@ -2,3 +2,12 @@
     color: #fff;
     cursor: pointer;
 }
+
+/* mobile design */
+
+@media  screen and (max-width:576px) {
+    .logo{
+        width: 20%;
+        font-size: 16px;
+    } 
+}
