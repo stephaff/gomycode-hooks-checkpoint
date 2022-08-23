@@ -39,7 +39,7 @@ const MovieRef = ({ addWindow, setAddWindow, addMovie }) => {
           <h3>Poster</h3>
           <div className="poster-choice">
             <input type="file" id="file-poster" accept='.png, .jpg, .jpeg' onChange={ selectImage } hidden />
-            <label for="file-poster">Choisir un fichier</label>
+            <label htmlFor="file-poster">Choisir un fichier</label>
           </div>
         </div>
         <div className="movieRef-url">
